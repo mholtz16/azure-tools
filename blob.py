@@ -1,7 +1,7 @@
 from azure.identity import DefaultAzureCredential
 from azure.storage.blob import BlobServiceClient
 
-account_url = 'https://tscfeedbacklive.blob.core.windows.net'
+account_url = 'https://ACCOUNT.blob.core.windows.net'
 default_credential = DefaultAzureCredential()
 
 

@@ -2,8 +2,7 @@ import os
 import pyodbc, struct
 from azure import identity
 
-#tscid = input("Enter TSC ID: ")
-tscid = 'aaac315d-56d6-4115-bf32-fbdff5879b83'
+tscid = input("Enter TSC ID: ")
 
 connection_string = os.environ["AZURE_SQL_CONNECTIONSTRING"]
 

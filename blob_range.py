@@ -2,7 +2,7 @@ import requests
 import time
 chunk_size = 2097152;
 
-urls = ['https://cdn.screencast.tsc-dev.co/uploads/g0003020UFwgduTTBuQYt71YXlRR2/luma.mp4?sp=r&st=2024-05-21T14:08:24Z&se=2024-05-21T22:08:24Z&spr=https&sv=2022-11-02&sr=b&sig=A7skVnnhaaFlx5jir%2BIwU5QN2UOOoHvhI3OmM5%2BqNTg%3D','https://tscscreencastdeveast.blob.core.windows.net/uploads/g0003020UFwgduTTBuQYt71YXlRR2/luma.mp4?sp=r&st=2024-05-21T14:08:24Z&se=2024-05-21T22:08:24Z&spr=https&sv=2022-11-02&sr=b&sig=A7skVnnhaaFlx5jir%2BIwU5QN2UOOoHvhI3OmM5%2BqNTg%3D']
+urls = ['','']
 
 for url in urls:
     start_time = time.time()
