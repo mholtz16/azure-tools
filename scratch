@@ -1,0 +1,1 @@
+export AZURE_SQL_CONNECTIONSTRING='Driver={ODBC Driver 18 for SQL Server};Server=tcp:tscfeedback-live.database.windows.net,1433;Database=tscfeedback-live;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30'

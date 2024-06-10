@@ -1,0 +1,3 @@
+AllowAllWindowsAzureIPs
+powerbiserv01
+Allow Azure Services
