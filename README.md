@@ -11,3 +11,6 @@ With these you can iterate over an entire azure account looking for various thin
 see "disks.py" for an example of how to iterate over an account. 
 
 The majority of these use the defaulit azure credential which is easily created by using the azure cli and running `az login`
+
+
+To install this, clone the repo, create a virtual python environment (i.e. `python -m venv .venv & source .venv/bin/activate` then run `pip install -r requirements.txt`
