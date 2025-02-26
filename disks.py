@@ -2,20 +2,13 @@ from azure.identity import DefaultAzureCredential
 import json
 from account import Account
 from getpass import getpass
-'''
 
-with open('creds.json','r') as c:
-    creds=json.loads(c.read())
-
-
-azure_creds=creds['azure']
-client = azure_creds['client']
-tenant = azure_creds['tenant']
-secret=azure_creds['secret']['value']
-'''
 credentials = DefaultAzureCredential()
 ac = Account(credentials)
 
+
+# Iterate over all the attached disks in an account and output a csv
+# subscription,resource_group, diskname, diskstate
 #skip_subs = ['TSC-Captioning-Dev01','TSC-WebWWW-Dev01','TSC-Internal-Dev','TSC-CorpCloud-Dev01','TSC-WebServices-Dev']
 skip_subs = []
 print('subscription,resource group,disk,status')

@@ -17,7 +17,7 @@ ac = Account(credentials)
 
 
 
-
+# iterate over every virtual network and get all the dns servers for that network.
 
 for sub in ac.subscriptions:
     for rg in sub.get_resource_groups():

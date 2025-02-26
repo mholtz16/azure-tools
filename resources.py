@@ -1,3 +1,6 @@
+# this is the beginnings of a set of resource classes
+# There isn't much here.
+
 
 from resourcegroup import ResourceGroup
 

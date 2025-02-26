@@ -18,7 +18,7 @@ ac = Account(credentials)
 location = input("location (eastus, eastus2, northcentralus, westus...): ")
 environment = input("Environment (Dev, Stage, Live): ")
 
-
+# iterate all the virtual networks in a region with a speciric environment and print out their dhcp options if they have any
 
 for sub in ac.subscriptions:
     for rg in sub.get_resource_groups():

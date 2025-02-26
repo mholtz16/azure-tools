@@ -3,7 +3,7 @@ import pyodbc, struct
 from azure.identity import DefaultAzureCredential
 from azure.storage.blob import BlobServiceClient
 
-
+# get blobs for a specific user in tscfeedback
 def get_conn():
     connection_string= 'Driver={ODBC Driver 18 for SQL Server};Server=tcp:tscfeedback-live.database.windows.net,1433;Database=tscfeedback-live;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30'
 

@@ -1,5 +1,8 @@
 
-#from subscription import Subscription
+# This is a class representing a resource group in azure.
+# most azure api clients are linked to the subscription so it 
+# inherits those from the parent subscription
+
 
 class ResourceGroup:
     id=None
@@ -45,3 +48,6 @@ class ResourceGroup:
 
         return(self.rs_vaults)
 
+if __name__ == "__main__":
+    print("This is a library. Do not execute")
+    exit()

@@ -2,9 +2,13 @@ import os
 import pyodbc, struct
 from azure import identity
 
+# this just executes a query and prints out the results.
+
 tscid = input("Enter TSC ID: ")
 
 connection_string = os.environ["AZURE_SQL_CONNECTIONSTRING"]
+
+
 
 def get_conn():
     credential = identity.DefaultAzureCredential(exclude_interactive_browser_credential=False)
@@ -20,3 +24,4 @@ cursor.execute(query)
 rows = cursor.fetchall()
 for row in rows:
     print(row)
+

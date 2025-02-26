@@ -2,17 +2,11 @@ from azure.identity import DefaultAzureCredential
 import json
 from account import Account
 from getpass import getpass
-'''
 
-with open('creds.json','r') as c:
-    creds=json.loads(c.read())
+# iterate over all the vms in the account and print out the version of windows on them.
 
 
-azure_creds=creds['azure']
-client = azure_creds['client']
-tenant = azure_creds['tenant']
-secret=azure_creds['secret']['value']
-'''
+
 credentials = DefaultAzureCredential()
 ac = Account(credentials)
 
@@ -27,7 +21,7 @@ for sub in ac.subscriptions:
             i=1
             for vm in vms:
                 try:
-                    if not vm.os_profile.windows_configuration:
-                        print(vm.name)
+                    if vm.os_profile.windows_configuration:
+                        print(vm.os_profile.windows_configuration)
                 except:
                     None
