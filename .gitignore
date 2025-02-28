@@ -11,7 +11,6 @@ get-identities-from-profile-api.ps1
 names.txt
 old_data
 remove.txt
-requirements.txt
 cratch
 skip
 sorted.txt
